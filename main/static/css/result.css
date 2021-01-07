@@ -1,0 +1,400 @@
+@font-face {
+    font-family: "GmarketSansBold";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "NEXON Lv1 Gothic OTF";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff")
+      format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/background.jpg') no-repeat 0 0 / 100vw 100vh;
+    color: #fff;
+    overflow-x: hidden;
+    font-family: "NEXON Lv1 Gothic OTF";
+    background-attachment: fixed;
+}
+
+#main_contents{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 100px;
+}
+
+#main_contents .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    max-width: 500px;
+    padding-bottom: 50px;
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.result h3 {
+    font-size: 20px;
+    padding-bottom: 15px;
+    width: 400px;
+}
+
+.result h1 {
+    font-size: 50px;
+    font-family: "GmarketSansBold";
+}
+
+.result_img {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 300px;
+}
+
+.result_img img{
+    width: 100%;
+    height: auto;
+}
+
+.result_explains {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 50px;
+    line-height: 1.5;
+}
+
+.result_explains .explain {
+    width: 400px;
+    margin-bottom: 30px;
+}
+
+.result_explains .title {
+    font-family: "GmarketSansBold";
+    font-size: 20px;
+    text-align: center;
+    border-top: 3px solid #ea7e7c;
+    border-bottom: 3px solid #ea7e7c;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.result_explains ul {
+    padding: 0 20px;
+    list-style-type: disc;
+}
+
+.result_explains li {
+    padding-bottom: 15px;
+}
+
+.language_lists {
+    display: flex;
+    justify-content: space-between;
+}
+
+.language_lists li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.language_lists li .img_wrap {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.language_lists li .img_wrap img {
+    width: 100%;
+    height: auto;
+}
+
+.language_lists li h3 {
+    font-size: 15px;
+    font-family: "GmarketSansBold";
+    color: #ea7e7c
+}
+
+.explain p {
+    padding: 0 15px;
+    line-height: 1.5;
+}
+
+.lectures {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 3px solid #ea7e7c;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+}
+
+.lectures .title {
+    text-align: center;
+    width: 400px;
+    font-size: 30px;
+    font-family: "GmarketSansBold";
+    color: #ea7e7c;
+    position: relative;
+}
+
+.lectures .title:before, .lectures .title:after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 3px;
+    background-color: #ea7e7c;
+    position: absolute;
+}
+
+.lectures .title:before {
+    left: 0;
+    top: 50%;
+}
+
+.lectures .title:after{
+    right: 0;
+    top: 50%;
+}
+
+.lectures p {
+    padding: 50px 0;
+    line-height: 1.5;
+}
+
+.lectures ul {
+    width: 400px;
+}
+
+.lectures li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.lectures li img {
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+}
+
+.lectures li h3 {
+    font-family: "GmarketSansBold";
+    font-size: 17px;
+    text-align: center;
+    line-height: 1.5;
+    padding: 0 10px 20px;
+}
+
+.lectures li button {
+    font-family: "NEXON Lv1 Gothic OTF";
+    font-size: 20px;
+    width: 400px;
+    height: 50px;
+    padding: 5px;
+    border-style: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #7F47DD;
+    color: #fff;
+    font-weight: bold;
+}
+
+.lectures li button:hover {
+    text-decoration: underline;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.buttons h3 {
+    padding-bottom: 20px;
+}
+
+.buttons button {
+    font-family: "NEXON Lv1 Gothic OTF";
+    font-size: 20px;
+    width: 400px;
+    height: 50px;
+    padding: 5px;
+    border-style: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.buttons button:hover {
+    text-decoration: underline;
+}
+
+.buttons button.color {
+    background-color: #7F47DD;
+    color: #fff;
+}
+
+.weniv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weniv a {
+    width: 100px;
+}
+
+.weniv img{
+    width: 100%;
+    height: auto;
+}
+
+.weniv p {
+    padding-top: 20px;
+    font-size: 10px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+@media all and (min-width: 320px) and (max-width: 600px) {
+    #main_contents{
+        margin-top: 50px;
+    }
+    
+    #main_contents .wrapper {
+        max-width: 300px;
+    }
+    
+    .result h3 {
+        font-size: 15px;
+        width: 300px;
+    }
+    
+    .result h1 {
+        font-size: 35px;
+    }
+    
+    .result_img {
+        width: 200px;
+    }
+    
+    .result_explains {
+        padding-bottom: 30px;
+    }
+    
+    .result_explains .explain {
+        width: 250px;
+    }
+    
+    .result_explains .title {
+        font-size: 16px;
+        padding: 10px 0;
+        margin-bottom: 15px;
+    }
+    
+    .result_explains ul {
+        padding: 0 15px;
+        font-size: 10px;
+    }
+    
+    .result_explains li {
+        padding-bottom: 15px;
+    }
+
+    .language_lists li .img_wrap {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .language_lists li h3 {
+        font-size: 10px;
+    }
+    
+    .explain p {
+        font-size: 10px;
+    }
+    
+    .lectures {
+        padding-bottom: 10px;
+        margin-bottom: 40px;
+    }
+    
+    .lectures .title {
+        width: 250px;
+        font-size: 20px;
+    }
+    
+    .lectures .title:before, .lectures .title:after {
+        width: 70px;
+    }
+
+    .lectures p {
+        width: 200px;
+        padding: 30px 0;
+        font-size: 15px;
+    }
+    
+    .lectures ul {
+        width: 250px;
+    }
+
+    .lectures li h3 {
+        font-size: 10px;
+        padding: 0 10px 20px;
+    }
+    
+    .lectures li button {
+        font-size: 15px;
+        width: 250px;
+        height: 30px;
+    }
+    
+    .buttons {
+        padding-bottom: 30px;
+    }
+
+    .buttons h3 {
+        width: 250px;
+        font-size: 10px;
+    }
+    
+    .buttons button {
+        font-size: 15px;
+        width: 250px;
+        height: 30px;
+    }
+    
+    .weniv a {
+        width: 70px;
+    }
+    
+    .weniv p {
+        width: 200px;
+    }
+}

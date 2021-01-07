@@ -1,0 +1,154 @@
+@font-face {
+    font-family: "GmarketSansBold";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "NEXON Lv1 Gothic OTF";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff")
+      format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/background.jpg') no-repeat 0 0 / 100vw 100vh;
+    color: #fff;
+    overflow: hidden;
+    font-family: "NEXON Lv1 Gothic OTF";
+}
+
+#main_contents{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    margin-top: 100px;
+}
+
+#main_contents .wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    max-width: 500px;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.main_title {
+    font-family: "GmarketSansBold";
+    font-size: 50px;
+    padding-bottom: 15px;
+}
+
+.sub_title {
+    font-size: 20px;
+    color: yellow;
+}
+
+.explain {
+    display: flex;
+    justify-content: center;
+    line-height: 1.5;
+    padding-bottom: 100px;
+}
+
+.explain p {
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.buttons button{
+    font-family: "NEXON Lv1 Gothic OTF";
+    font-size: 20px;
+    width: 250px;
+    height: 50px;
+    padding: 5px;
+    border-style: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.buttons button:hover{
+    text-decoration: underline;
+}
+
+.start {
+    background-color: #fff;
+    color: #7F47DD;
+    margin-bottom: 20px;
+}
+
+.lecture {
+    background-color: #7F47DD;
+    color: #fff;
+}
+
+.weniv {
+    display: flex;
+    justify-content: center;
+}
+
+.weniv a {
+    width: 100px;
+}
+
+.weniv img{
+    width: 100%;
+    height: auto;
+}
+
+@media all and (min-width: 320px) and (max-width: 600px) {
+    #main_contents{
+        margin-top: 50px;
+    }
+    
+    #main_contents .wrapper {
+        max-width: 300px;
+    }
+    
+    .title {
+        padding-bottom: 50px;
+    }
+
+    .main_title {
+        font-size: 35px;
+    }
+    
+    .sub_title {
+        font-size: 15px;
+    }
+
+    .explain {
+        font-size: 15px;
+        padding-bottom: 50px;
+    }
+    
+    .buttons {
+        padding-bottom: 20px;
+    }
+    
+    .buttons button{
+        font-size: 15px;
+        width: 200px;
+        height: 40px;
+    }
+
+    .weniv a {
+        width: 70px;
+    }
+}
