@@ -47,6 +47,7 @@ body {
     font-size: 30px;
     padding-bottom: 30px;
     font-family: "GmarketSansBold";
+    line-height: 1.5;
 }
 
 .question_container .number {
@@ -98,9 +99,9 @@ body {
     background-color: #fff;
 }
 
-@media all and (min-width: 320px) and (max-width: 600px) {
+@media all and (min-width: 279px) and (max-width: 600px) {
     #survey{
-        margin-top: 50px;
+        margin-top: 30px;
     }
     
     .test {
@@ -108,17 +109,17 @@ body {
     }
     
     .question_container {
-        font-size: 20px;
+        font-size: 17px;
+        line-height: 1.2;
     }
     
     .question_container .number {
-        font-family: "NEXON Lv1 Gothic OTF";
-        padding-bottom: 30px;
+        padding-bottom: 15px;
     }
     
     .answer {
         font-size: 12px;
-        padding-bottom: 30px;
+        padding-bottom: 20px;
     }
 
     input[type=radio] {
@@ -136,5 +137,31 @@ body {
         font-size: 15px;
         width: 70px;
         height: 40px;
+    }
+}
+
+@media all and (min-width: 1920px) and (max-width: 2560px) {
+    .test {
+        max-width: 700px;
+    }
+    
+    .question_container {
+        font-size: 40px;
+        padding-bottom: 50px;
+    }
+    
+    .answer {
+        font-size: 20px;
+        padding-bottom: 50px;
+    }
+    
+    .answer div {
+        padding-bottom: 20px;
+    }
+
+    .next_btn, .submit_btn, .prev_btn{
+        font-size: 30px;
+        width: 200px;
+        height: 60px;
     }
 }

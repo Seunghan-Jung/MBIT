@@ -64,6 +64,7 @@ body {
     justify-content: center;
     overflow: hidden;
     width: 300px;
+    height: auto;
 }
 
 .result_img img{
@@ -282,7 +283,7 @@ body {
     line-height: 1.5;
 }
 
-@media all and (min-width: 320px) and (max-width: 600px) {
+@media all and (min-width: 279px) and (max-width: 600px) {
     #main_contents{
         margin-top: 50px;
     }
@@ -299,7 +300,7 @@ body {
     .result h1 {
         font-size: 35px;
     }
-    
+
     .result_img {
         width: 200px;
     }
@@ -357,7 +358,7 @@ body {
     .lectures p {
         width: 200px;
         padding: 30px 0;
-        font-size: 15px;
+        font-size: 10px;
     }
     
     .lectures ul {
@@ -396,5 +397,118 @@ body {
     
     .weniv p {
         width: 200px;
+    }
+}
+
+@media all and (min-width: 1920px) and (max-width: 2560px) {
+    #main_contents .wrapper {
+        max-width: 700px;
+    }
+    
+    .result h3 {
+        font-size: 30px;
+    }
+    
+    .result h1 {
+        font-size: 70px;
+    }
+    
+    .result_img {
+        width: 400px;
+    }
+    
+    .result_explains .explain {
+        width: 600px;
+        margin-bottom: 50px;
+    }
+    
+    .result_explains .title {
+        font-size: 30px;
+        padding: 15px 0;
+        margin-bottom: 30px;
+    }
+    
+    .result_explains ul {
+        padding: 0 30px;
+        font-size: 20px;
+    }
+    
+    .language_lists li .img_wrap {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 15px;
+    }
+    
+    .language_lists li h3 {
+        font-size: 20px;
+    }
+    
+    .explain p {
+        padding: 0 30px;
+        font-size: 20px;
+    }
+    
+    .lectures {
+        border-bottom: 3px solid #ea7e7c;
+        padding-bottom: 20px;
+        margin-bottom: 50px;
+    }
+    
+    .lectures .title {
+        width: 600px;
+        font-size: 45px;
+    }
+    
+    .lectures .title:before, .lectures .title:after {
+        width: 180px;
+    }
+    
+    .lectures p {
+        padding: 30px 0 50px;
+        font-size: 22px;
+        font-weight: bold;
+    }
+    
+    .lectures ul {
+        width: 600px;
+    }
+    
+    .lectures li {
+        padding-bottom: 70px;
+    }
+    
+    .lectures li img {
+        padding-bottom: 30px;
+    }
+    
+    .lectures li h3 {
+        font-size: 25px;
+    }
+    
+    .lectures li button {
+        font-size: 30px;
+        width: 600px;
+        height: 70px;
+    }
+    
+    .buttons h3 {
+        padding-bottom: 20px;
+        font-size: 20px;
+    }
+    
+    .buttons button {
+        font-size: 30px;
+        width: 600px;
+        height: 70px;
+        margin-bottom: 50px;
+    }
+    
+    .weniv a {
+        width: 150px;
+    }
+    
+    .weniv p {
+        padding-top: 20px;
+        font-size: 15px;
     }
 }
