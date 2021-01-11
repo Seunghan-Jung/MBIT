@@ -30,14 +30,26 @@
                     <button class="lecture">강의 보러가기</button>
                 </a>
             </div>
+
+            <div class="result_data">
+                <div class="data_wrap">
+                    <div class="total_participants">
+                        <h3>참여자 수</h3>
+                    </div>
+                    <ul>
+                        {% for developer in developers %}
+                            <li>{{ developer.name }} : {{ developer.count }}명</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+
             <div class="weniv">
                 <a href="http://www.paullab.co.kr">
                     <img src="{% static 'img/weniv_text_logo.png' %}" alt="weniv">
                 </a>
             </div>
-            {% for developer in developers %}
-                <li>{{ developer.name }} : {{ developer.count }}명</li>
-            {% endfor %}
+            
         </div>
     </section>
 {% endblock body %}
