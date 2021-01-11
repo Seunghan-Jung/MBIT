@@ -1,25 +1,27 @@
+{% extends 'main/base.html' %}
+
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="{% static 'css/reset.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'css/form.css' %}">
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <title>나의 개발 유형찾기</title>
-</head>
-<body>
+
+{% block head %}
+  <link rel="stylesheet" type="text/css" href="{% static 'css/reset.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/form.css' %}">
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <title>나의 개발 유형찾기</title>
+{% endblock head %}
+
+{% block body %}
     <section id="survey">
         <div class="wrapper">
-            <form id="form" action="/result/" method="post">
+            <form id="form" action="{% url 'main:submit' %}" method="post">
               {% csrf_token %}
+
               {% for question in questions %}
                 <div class="test">
                     <div class="question_container">
                         <h3 class="number">{{ question.number }}/{{ questions.count }}</h3>
                         <h3 class="question">{{ question.content }}</h3>
                     </div>
+
                     <div class="answer">
                       {% for choice in question.choice_set.all %}
                         <div>
@@ -28,11 +30,13 @@
                             name="question-{{ question.number }}" 
                             id="choice-{{ choice.pk }}" 
                             value="{{ choice.developer.pk }}"
+                            required
                           />
                           <label for="choice-{{ choice.pk }}">{{ forloop.counter }}. {{ choice.content }}</label>
                         </div>
                       {% endfor %}
                     </div>
+
                     {% if not forloop.first %}
                     <div class="btn_wrap btn_sort">
                     {% else %}
@@ -47,11 +51,15 @@
                         <input type="submit" value="제출" class="submit_btn"/>
                       {% endif %}
                     </div>
+
                 </div>
               {% endfor %}
+              
             </form>
         </div>
     </section>
+{% endblock body %}
+
+{% block js %}
     <script type="text/javascript" src="{% static 'js/form.js' %}"></script>
-</body>
-</html>
+{% endblock js %}

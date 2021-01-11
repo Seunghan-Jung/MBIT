@@ -25,6 +25,13 @@ $(function(){
     resize();
 
     $('.next_btn').click(function(e){
+        let $this = $(this);
+        let divs = $(this).parent().prev().children();
+        let inputs = divs.find('input:checked');
+        if(inputs.length < 1) {
+            alert('문항이 선택되지 않았습니다.');
+            return false;
+        }
         e.preventDefault();
         scrollDown();
     });
@@ -33,8 +40,23 @@ $(function(){
         e.preventDefault();
         scrollUp();
     });
+
+    $("#form").submit(function() {
+        let radios = $('input[type=radio]:checked');
+        if(radios.length < 10) {
+            alert("문항이 선택되지 않았습니다.");
+            return false;
+        }
+        return true;
+    });
 });
 
 $(window).resize(function(){
     resize();
 });
+
+window.onbeforeunload = function(e) {
+    e.preventDefault();
+    e.returnValue = '';
+    window.scrollTo(0, 0);
+}

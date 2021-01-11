@@ -1,5 +1,5 @@
 from .models import Developer, Question, Choice
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 
 
 def index(request):
@@ -9,7 +9,7 @@ def index(request):
         'developers': developers
     }
     
-    return render(request, 'index.html', context)
+    return render(request, 'main/index.html', context)
 
 
 def form(request):
@@ -20,10 +20,10 @@ def form(request):
         'questions': questions,
     }
     
-    return render(request, 'form.html', context)
+    return render(request, 'main/form.html', context)
 
 
-def result(request):
+def submit(request):
     
     # 문항 수
     N = Question.objects.count()
@@ -42,9 +42,21 @@ def result(request):
     best_developer = Developer.objects.get(pk=best_developer_id)
     best_developer.count += 1
     best_developer.save()
+    
     context = {
         'developer': best_developer,
         'counter': counter
     }
     
-    return render(request, 'result.html', context)
+    return redirect('main:result', developer_id=best_developer_id)
+
+
+def result(request, developer_id):
+    
+    developer = Developer.objects.get(pk=developer_id)
+    context = {
+        'developer': developer,
+    }
+    
+    return render(request, 'main/result.html', context)
+    

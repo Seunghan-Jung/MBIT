@@ -1,14 +1,14 @@
+{% extends 'main/base.html' %}
+
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+{% block head %}
     <link rel="stylesheet" type="text/css" href="{% static 'css/reset.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/result.css' %}">
     <title>나의 개발 유형찾기</title>
-</head>
-<body>
+{% endblock head %}
+
+{% block body %}
     <section id="main_contents">
         <div class="wrapper">
             <div class="result">
@@ -22,7 +22,7 @@
             </div>
             <div class="result_explains">
                 <div class="explain">
-                    <h3 class="title">나와 맞는 개발 유형은 Front-end?!</h3>
+                    <h3 class="title">나와 맞는 개발 유형은 {{ developer.name }}?!</h3>
                     <ul>
                         <li>
                             프론트엔드는 어쩌고 저쩌고 이기 때문에 기본적으로 무엇을 그렇기 때문에 HTML,CSS를 공부하고 JS를 어쩌고 하는 것이 좋아!
@@ -106,7 +106,7 @@
                 <ul>
                     <il>
                         <h3>...이건 내가 아니야... 잘못된게 분명해!</h3>
-                        <a href="/">
+                        <a href="{% url 'main:index' %}">
                             <button type="button">테스트 다시 하기</button>
                         </a>
                     </il>
@@ -135,7 +135,5 @@
             </div>
         </div>
     </section>
-</body>
-</html>
-
+{% endblock body %}
 
