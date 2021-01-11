@@ -236,3 +236,7 @@ pip-selfcheck.json
 .ionide
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,venv,django,python
+
+# 서버 설정
+.config/
+tmp/
