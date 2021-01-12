@@ -14,8 +14,9 @@
 }
 
 body {
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/background.jpg') no-repeat 0 0 / 100vw 100vh;
-    color: #fff;
+    /* background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/background.jpg') no-repeat 0 0 / 100vw 100vh; */
+    background-color: #FAF1BE;
+    color: #000;
     overflow-x: hidden;
     font-family: "NEXON Lv1 Gothic OTF";
     background-attachment: fixed;
@@ -52,7 +53,8 @@ body {
 
 .sub_title {
     font-size: 20px;
-    color: yellow;
+    font-weight: bold;
+    color: #7F47DD;
 }
 
 .explain {
@@ -106,8 +108,8 @@ body {
     margin-bottom: 50px;
     width: 270px;
     padding: 15px 15px;
-    border-top: 3px solid #fff;
-    border-bottom: 3px solid #fff;
+    border-top: 3px solid #000;
+    border-bottom: 3px solid #000;
     line-height: 1.5;
 }
 

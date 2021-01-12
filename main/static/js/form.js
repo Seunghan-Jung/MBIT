@@ -25,7 +25,6 @@ $(function(){
     resize();
 
     $('.next_btn').click(function(e){
-        let $this = $(this);
         let divs = $(this).parent().prev().children();
         let inputs = divs.find('input:checked');
         if(inputs.length < 1) {
@@ -55,8 +54,8 @@ $(window).resize(function(){
     resize();
 });
 
-window.onbeforeunload = function(e) {
-    e.preventDefault();
-    e.returnValue = '';
-    window.scrollTo(0, 0);
-}
+$(function(){
+    $("html, body").animate({
+        scrollTop: 0
+    }, 500); 
+});
