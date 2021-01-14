@@ -2,6 +2,13 @@
 {% load static %}
 
 {% block head %}
+    <!-- facebook -->
+    <meta property="og:url" content="https://mbit-test.weniv.co.kr/" />
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="나의 개발 유형은?" />
+    <meta property="og:description" content="나에게 꼭 맞는 개발 유형은 무엇일까?" />
+    <meta property="og:image" content="https://mbit-test.weniv.co.kr{% static 'img/mbit_thumbnail.png' %}" />
+    <!-- //facebook -->
     <link rel="stylesheet" type="text/css" href="{% static 'css/reset.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
     <title>나의 개발 유형찾기</title>
@@ -15,13 +22,26 @@
                 <h3 class="main_title">나의 MBIT</h3>
                 <h3 class="sub_title">My Best IT personalities</h3>
             </div>
-            <div class="explain">
+            <div class="intro">
+                <div class="intro_title">
+                    <h1>나의 개발 유형은?!</h1>
+                    <div class="type">
+                        <ul class="type_list">
+                            {% for developer in developers %}
+                            <li>{{ developer.name }}</li>
+                            {% endfor %}
+                            <li>{{ developers.0.name }}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="explain">
                 <p>
                     "코딩 공부를 시작하려는데...<br>
                     도대체 뭐 부터 공부해야 할까?"<br><br>
                     나의 개발 유형을 테스트 해보자!
                 </p>
-            </div>
+            </div> -->
             <div class="buttons">
                 <a href="{% url 'main:form' %}">
                     <button class="start" type="button">시작하기</button>
@@ -46,7 +66,7 @@
 
             <div class="weniv">
                 <a href="http://www.paullab.co.kr">
-                    <img src="{% static 'img/weniv_text_logo.png' %}" alt="weniv">
+                    <img src="{% static 'img/weniv_logo_black.png' %}" alt="weniv">
                 </a>
             </div>
             

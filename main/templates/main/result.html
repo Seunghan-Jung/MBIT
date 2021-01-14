@@ -3,8 +3,15 @@
 {% load static %}
 
 {% block head %}
+    <!-- facebook -->
+    <meta property="og:title" content="나의 개발 유형은?" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:description" content="나에게 꼭 맞는 개발 유형은 무엇일까?" />
+    <!-- //facebook -->
     <link rel="stylesheet" type="text/css" href="{% static 'css/reset.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/result.css' %}">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <title>나의 개발 유형찾기</title>
 {% endblock head %}
 
@@ -102,6 +109,14 @@
                     </li>
                 </ul>
             </div> -->
+            <div class="share">
+                <div class="url">
+                    <button class="copy_btn" type="button">URL 복사하기</button>
+                </div>
+                <div class="facebook">
+                    <button class="facebook_share" type="button">Facebook 공유하기</button>
+                </div>
+            </div>
             <div class="buttons">
                 <ul>
                     <il>
@@ -137,3 +152,6 @@
     </section>
 {% endblock body %}
 
+{% block js %}
+<script type="text/javascript" src="{% static 'js/result.js' %}"></script>
+{% endblock js %}
