@@ -21,10 +21,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'v0g$e_ly_29jqpa$o6$h*52t^6t&&$kss)&@b(0zdd39ajsoj='
+SECRET_KEY = os.environ['MBIT_LECTURE_SECRET_KEY']
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = True if os.environ['DEBUG'] == 'True' else False
 
 ALLOWED_HOSTS = ['*']
 
@@ -122,3 +122,5 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATIC_ROOT = BASE_DIR / 'staticfiles'
+
+X_FRAME_OPTIONS = 'ALLOWALL'
