@@ -542,7 +542,7 @@
     "model": "main.developer",
     "pk": 1,
     "fields": {
-        "name": "백엔드 개발자(네트워크와 인프라를 포함)"
+        "name": "백엔드 개발자"
     }
 },
 {
