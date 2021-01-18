@@ -25,6 +25,7 @@ SECRET_KEY = os.environ.get('MBIT_LECTURE_SECRET_KEY', '-4x*bi!=wb5scgl4#zwxc#c1
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False if os.environ.get('DEBUG') == 'False' else True
+# DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
