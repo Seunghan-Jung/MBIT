@@ -254,6 +254,10 @@ button:hover {
     color: #fff;
 }
 
+.kakao_share {
+    background-color: #f1d900;
+}
+
 .buttons {
     display: flex;
     flex-direction: column;
