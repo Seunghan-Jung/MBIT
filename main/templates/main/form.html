@@ -5,6 +5,7 @@
 {% block head %}
   <link rel="stylesheet" type="text/css" href="{% static 'css/reset.css' %}">
   <link rel="stylesheet" type="text/css" href="{% static 'css/form.css' %}">
+  <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}">
   <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
   <title>나의 개발 유형찾기</title>
 {% endblock head %}
@@ -43,10 +44,10 @@
                     <div class="btn_wrap">
                     {% endif %}
                       {% if not forloop.first %}
-                        <button class="prev_btn">이전</button>
+                        <button class="prev_btn">이  전</button>
                       {% endif %}
                       {% if not forloop.last %}
-                        <button class="next_btn">다음</button>
+                        <button class="next_btn">다  음</button>
                       {% else %}
                         <input type="submit" value="제출" class="submit_btn"/>
                       {% endif %}

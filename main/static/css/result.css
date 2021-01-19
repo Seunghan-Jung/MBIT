@@ -14,7 +14,6 @@
 }
 
 body {
-    /* background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/background.jpg') no-repeat 0 0 / 100vw 100vh; */
     background-color: #FAF1BE;
     color: #000;
     overflow-x: hidden;
@@ -299,7 +298,7 @@ button:hover {
     button {
         font-size: 15px;
         width: 250px;
-        height: 30px;
+        height: 40px;
     }
 
     #main_contents{
@@ -391,7 +390,11 @@ button:hover {
 
     .share {
         padding-bottom: 10px;
-        margin-bottom: 40px;
+        margin-bottom: 30px;
+    }
+
+    .share button {
+        margin-bottom: 20px;
     }
     
     .buttons {
