@@ -20,8 +20,8 @@ function sendLink() {
           imageUrl:
             'https://mbit-test.weniv.co.kr/static/img/mbit_thumbnail.png',
           link: {
-            mobileWebUrl: 'http://mbit-test.weniv.co.kr',
-            webUrl: 'http://mbit-test.weniv.co.kr',
+            mobileWebUrl: 'https://mbit.weniv.co.kr',
+            webUrl: 'https://mbit.weniv.co.kr',
           },
         },
         social: {
@@ -33,8 +33,8 @@ function sendLink() {
           {
             title: '테스트 하러가기',
             link: {
-              webUrl: 'http://mbit-test.weniv.co.kr',
-              mobileWebUrl: 'http://mbit-test.weniv.co.kr',
+              webUrl: 'https://mbit.weniv.co.kr',
+              mobileWebUrl: 'https://mbit.weniv.co.kr',
             },
           },
         ],
