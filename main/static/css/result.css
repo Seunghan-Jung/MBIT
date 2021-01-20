@@ -14,15 +14,36 @@
 }
 
 body {
-    /* background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/background.jpg') no-repeat 0 0 / 100vw 100vh; */
     background-color: #FAF1BE;
     color: #000;
     overflow-x: hidden;
     font-family: "NEXON Lv1 Gothic OTF";
-    /* background-attachment: fixed; */
 }
 
-#main_contents{
+button {
+    font-family: "NEXON Lv1 Gothic OTF";
+    font-size: 20px;
+    width: 400px;
+    height: 50px;
+    padding: 5px;
+    border-style: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #fff;
+    color: #000;
+}
+
+button:hover {
+    text-decoration: underline;
+}
+
+.color {
+    background-color: #7F47DD;
+    color: #fff;
+}
+
+#main_contents {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -210,21 +231,30 @@ body {
 }
 
 .lectures li button {
-    font-family: "NEXON Lv1 Gothic OTF";
-    font-size: 20px;
-    width: 400px;
-    height: 50px;
-    padding: 5px;
-    border-style: none;
-    border-radius: 5px;
-    cursor: pointer;
     background-color: #7F47DD;
     color: #fff;
-    font-weight: bold;
 }
 
-.lectures li button:hover {
-    text-decoration: underline;
+.share {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+    border-bottom: 3px solid #ea7e7c;
+}
+
+.share button {
+    margin-bottom: 30px;
+}
+
+.facebook_share {
+    background-color: #3b5998;
+    color: #fff;
+}
+
+.kakao_share {
+    background-color: #f1d900;
 }
 
 .buttons {
@@ -239,27 +269,7 @@ body {
 }
 
 .buttons button {
-    font-family: "NEXON Lv1 Gothic OTF";
-    font-size: 20px;
-    width: 400px;
-    height: 50px;
-    padding: 5px;
-    border-style: none;
-    border-radius: 5px;
-    cursor: pointer;
-    background-color: #fff;
-    color: #000;
-    font-weight: bold;
     margin-bottom: 30px;
-}
-
-.buttons button:hover {
-    text-decoration: underline;
-}
-
-.buttons button.color {
-    background-color: #7F47DD;
-    color: #fff;
 }
 
 .weniv {
@@ -285,6 +295,12 @@ body {
 }
 
 @media all and (min-width: 279px) and (max-width: 600px) {
+    button {
+        font-size: 15px;
+        width: 250px;
+        height: 40px;
+    }
+
     #main_contents{
         margin-top: 50px;
     }
@@ -299,7 +315,7 @@ body {
     }
     
     .result h1 {
-        font-size: 35px;
+        font-size: 27px;
     }
 
     .result_img {
@@ -371,11 +387,14 @@ body {
         font-size: 10px;
         padding: 0 10px 20px;
     }
-    
-    .lectures li button {
-        font-size: 15px;
-        width: 250px;
-        height: 30px;
+
+    .share {
+        padding-bottom: 10px;
+        margin-bottom: 30px;
+    }
+
+    .share button {
+        margin-bottom: 20px;
     }
     
     .buttons {
@@ -385,12 +404,6 @@ body {
     .buttons h3 {
         width: 250px;
         font-size: 10px;
-    }
-    
-    .buttons button {
-        font-size: 15px;
-        width: 250px;
-        height: 30px;
     }
     
     .weniv a {
@@ -403,6 +416,12 @@ body {
 }
 
 @media all and (min-width: 1920px) and (max-width: 2560px) {
+    button {
+        font-size: 30px;
+        width: 600px;
+        height: 70px;
+    }
+
     #main_contents .wrapper {
         max-width: 700px;
     }
@@ -452,7 +471,6 @@ body {
     }
     
     .lectures {
-        border-bottom: 3px solid #ea7e7c;
         padding-bottom: 20px;
         margin-bottom: 50px;
     }
@@ -488,21 +506,12 @@ body {
         font-size: 25px;
     }
     
-    .lectures li button {
-        font-size: 30px;
-        width: 600px;
-        height: 70px;
-    }
-    
     .buttons h3 {
         padding-bottom: 20px;
         font-size: 20px;
     }
     
     .buttons button {
-        font-size: 30px;
-        width: 600px;
-        height: 70px;
         margin-bottom: 50px;
     }
     

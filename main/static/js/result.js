@@ -1,0 +1,66 @@
+const facebookShare = document.querySelector('.facebook_share');
+const kakaoShare = document.querySelector('.kakao_share');
+const copyBtn = document.querySelector('.copy_btn');
+
+$(function() {
+    let url = window.location.href;
+    let img = $('.result_img img').attr('src');
+    $("meta[property='og\\:url']").attr("content", url);
+    $("meta[property='og\\:image']").attr("content", img);
+});
+
+Kakao.init('376f7cf8300ecdc152f32bca6ebbcbca');
+
+function sendLink() {
+    Kakao.Link.sendDefault({
+        objectType: 'feed',
+        content: {
+          title: '나의 개발 유형은?',
+          description: '나에게 꼭 맞는 개발 유형을 알아보자!!',
+          imageUrl:
+            'https://mbit-test.weniv.co.kr/static/img/mbit_thumbnail.png',
+          link: {
+            mobileWebUrl: 'http://mbit-test.weniv.co.kr',
+            webUrl: 'http://mbit-test.weniv.co.kr',
+          },
+        },
+        social: {
+          likeCount: 286,
+          commentCount: 45,
+          sharedCount: 845,
+        },
+        buttons: [
+          {
+            title: '테스트 하러가기',
+            link: {
+              webUrl: 'http://mbit-test.weniv.co.kr',
+              mobileWebUrl: 'http://mbit-test.weniv.co.kr',
+            },
+          },
+        ],
+    });
+}
+
+function sharefacebook() {
+    let url = window.location.href;
+    let facebook = 'http://www.facebook.com/sharer/sharer.php?u=';
+    let link = facebook + url;
+    window.open(link);
+}
+
+function copyUrl() {
+    let tmp = document.createElement('input');
+    let url = location.href;
+
+    document.body.appendChild(tmp);
+    tmp.value = url;
+    tmp.select();
+	document.execCommand("copy");
+    document.body.removeChild(tmp);
+    
+	alert("URL이 복사되었습니다"); 
+}
+
+facebookShare.addEventListener('click', sharefacebook);
+kakaoShare.addEventListener('click', sendLink);
+copyBtn.addEventListener('click', copyUrl);
