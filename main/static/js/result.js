@@ -12,33 +12,41 @@ $(function() {
 Kakao.init('376f7cf8300ecdc152f32bca6ebbcbca');
 
 function sendLink() {
-    Kakao.Link.sendDefault({
-        objectType: 'feed',
-        content: {
-          title: '나의 개발 유형은?',
-          description: '나에게 꼭 맞는 개발 유형을 알아보자!!',
-          imageUrl:
-            'https://mbit.weniv.co.kr/static/img/mbit_thumbnail.png',
+  let result_url = window.location.href;
+  Kakao.Link.sendDefault({
+      objectType: 'feed',
+      content: {
+        title: '나의 개발 유형은?',
+        description: '나에게 꼭 맞는 개발 유형을 알아보자!!',
+        imageUrl:
+          'https://mbit.weniv.co.kr/static/img/mbit_thumbnail.png',
+        link: {
+          mobileWebUrl: 'https://mbit.weniv.co.kr',
+          webUrl: 'https://mbit.weniv.co.kr',
+          },
+      },
+      social: {
+        likeCount: 286,
+        commentCount: 45,
+        sharedCount: 845,
+      },
+      buttons: [
+        {
+          title: '결과 보러가기',
           link: {
-            mobileWebUrl: 'https://mbit.weniv.co.kr',
+            webUrl: result_url,
+            mobileWebUrl: result_url,
+          },
+        },
+        {
+          title: '테스트 하러가기',
+          link: {
             webUrl: 'https://mbit.weniv.co.kr',
+            mobileWebUrl: 'https://mbit.weniv.co.kr',
           },
         },
-        social: {
-          likeCount: 286,
-          commentCount: 45,
-          sharedCount: 845,
-        },
-        buttons: [
-          {
-            title: '테스트 하러가기',
-            link: {
-              webUrl: 'https://mbit.weniv.co.kr',
-              mobileWebUrl: 'https://mbit.weniv.co.kr',
-            },
-          },
-        ],
-    });
+      ],
+  });
 }
 
 function sharefacebook() {
