@@ -18,7 +18,7 @@ function sendLink() {
           title: '나의 개발 유형은?',
           description: '나에게 꼭 맞는 개발 유형을 알아보자!!',
           imageUrl:
-            'https://mbit-test.weniv.co.kr/static/img/mbit_thumbnail.png',
+            'https://mbit.weniv.co.kr/static/img/mbit_thumbnail.png',
           link: {
             mobileWebUrl: 'https://mbit.weniv.co.kr',
             webUrl: 'https://mbit.weniv.co.kr',
