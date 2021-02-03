@@ -10,6 +10,7 @@ $(function() {
 });
 
 Kakao.init('376f7cf8300ecdc152f32bca6ebbcbca');
+// Kakao.isInitialized();
 
 function sendLink() {
   let result_url = window.location.href;
@@ -32,14 +33,14 @@ function sendLink() {
       },
       buttons: [
         {
-          title: '결과 보러가기',
+          title: '결과보기',
           link: {
             webUrl: result_url,
             mobileWebUrl: result_url,
           },
         },
         {
-          title: '테스트 하러가기',
+          title: '테스트 하기',
           link: {
             webUrl: 'https://mbit.weniv.co.kr',
             mobileWebUrl: 'https://mbit.weniv.co.kr',
@@ -57,16 +58,17 @@ function sharefacebook() {
 }
 
 function copyUrl() {
+    let url = window.location.href;
     let tmp = document.createElement('input');
-    let url = location.href;
+    
 
     document.body.appendChild(tmp);
     tmp.value = url;
     tmp.select();
-	document.execCommand("copy");
+	  document.execCommand("copy");
     document.body.removeChild(tmp);
     
-	alert("URL이 복사되었습니다"); 
+	  alert("URL이 복사되었습니다"); 
 }
 
 facebookShare.addEventListener('click', sharefacebook);
