@@ -17,7 +17,6 @@ body {
     background-color: #FAF1BE;
     color: #000;
     overflow: hidden;
-    background-attachment: fixed;
     font-family: "NEXON Lv1 Gothic OTF";
 }
 
@@ -29,15 +28,8 @@ body {
     margin-top: 50px;
 }
 
-#survey .wrapper {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
-
 .test {
     max-width: 600px;
-    width: 100vw;
     height: 100vh;
 }
 
@@ -59,8 +51,6 @@ body {
 }
 
 .answer {
-    display: flex;
-    flex-direction: column;
     font-size: 17px;
     line-height: 1.5;
     padding-bottom: 30px;
@@ -83,7 +73,7 @@ body {
     justify-content: space-between;
 }
 
-.next_btn, .submit_btn, .prev_btn{
+button, .submit_btn {
     font-family: "NEXON Lv1 Gothic OTF";
     font-size: 20px;
     width: 130px;
@@ -93,10 +83,10 @@ body {
     border-radius: 10px;
     background-color: #7F47DD;
     color: #fff;
+    cursor: pointer;
 }
 
-.next_btn:hover, .submit_btn:hover, .prev_btn:hover{
-    cursor: pointer;
+button:hover, .submit_btn:hover {
     color: #7F47DD;
     background-color: #fff;
 }
@@ -137,7 +127,7 @@ body {
         padding-bottom: 10px;
     }
 
-    .next_btn, .submit_btn, .prev_btn{
+    button, .submit_btn {
         font-size: 15px;
         width: 70px;
         height: 40px;
@@ -180,7 +170,7 @@ body {
         padding-bottom: 10px;
     }
 
-    .next_btn, .submit_btn, .prev_btn{
+    button, .submit_btn {
         font-size: 15px;
         width: 70px;
         height: 40px;
@@ -206,7 +196,7 @@ body {
         padding-bottom: 20px;
     }
 
-    .next_btn, .submit_btn, .prev_btn{
+    button, .submit_btn {
         font-size: 30px;
         width: 200px;
         height: 60px;

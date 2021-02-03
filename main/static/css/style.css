@@ -31,14 +31,20 @@
     }
 }
 
+html {
+    width: 100%;
+    height: 100%;
+}
+
 body {
+    width: 100%;
+    height: 100%;
     background-color: #FAF1BE;
     color: #000;
-    overflow-x: hidden;
     font-family: "NEXON Lv1 Gothic OTF";
 }
 
-#main_contents{
+#main_contents {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -55,8 +61,6 @@ body {
 }
 
 .title {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     padding-bottom: 50px;
 }
@@ -74,9 +78,6 @@ body {
 }
 
 .intro {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     text-align: center;
     padding-bottom: 40px;
 }
@@ -95,71 +96,51 @@ body {
 
 .type_list {
     animation: rotate 7s infinite;
-    animation-duration: reverse;
-}
-
-.explain {
-    display: flex;
-    justify-content: center;
-    line-height: 1.5;
-    padding-bottom: 50px;
-    text-align: center;
 }
 
 .buttons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-align: center;
     padding-bottom: 50px;
 }
 
-.buttons button{
-    font-family: "NEXON Lv1 Gothic OTF";
-    font-size: 20px;
+.buttons button {
     width: 300px;
     height: 50px;
     padding: 5px;
     border-style: none;
     border-radius: 10px;
-    cursor: pointer;
+    font-family: "NEXON Lv1 Gothic OTF";
+    font-size: 20px;
     font-weight: bold;
-}
-
-.buttons button:hover{
-    text-decoration: underline;
-}
-
-.start {
+    cursor: pointer;
     background-color: #fff;
     color: #7F47DD;
     margin-bottom: 20px;
 }
 
-.lecture {
-    background-color: #7F47DD;
-    color: #fff;
+.buttons button:hover {
+    text-decoration: underline;
 }
 
 .result_data {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
 }
 
 .result_data .data_wrap {
-    margin-bottom: 50px;
     width: 270px;
-    padding: 15px 15px;
+    padding: 15px;
     border-top: 3px solid #000;
     border-bottom: 3px solid #000;
     line-height: 1.5;
+    margin-bottom: 50px;
 }
 
-.result_data .total_participants {
-    padding: 20px 0 30px;
-    font-size: 20px;
+.result_data h3 {
     text-align: center;
+    font-size: 20px;
     font-weight: bold;
+    padding: 20px 0 30px; 
 }
 
 .result_data li {
@@ -219,7 +200,7 @@ body {
         padding-bottom: 20px;
     }
     
-    .buttons button{
+    .buttons button {
         font-size: 17px;
         width: 200px;
         height: 40px;
@@ -230,7 +211,7 @@ body {
         width: 170px;
     }
 
-    .result_data .total_participants {
+    .result_data h3 {
         font-size: 17px;
     }
     
@@ -291,7 +272,7 @@ body {
         width: 220px;
     }
 
-    .result_data .total_participants {
+    .result_data h3 {
         font-size: 20px;
     }
     
@@ -317,11 +298,6 @@ body {
     .sub_title {
         font-size: 30px;
     }
-    
-    .explain {
-        line-height: 2;
-        font-size: 20px;
-    }
 
     .buttons button{
         font-size: 30px;
@@ -333,7 +309,7 @@ body {
         width: 320px;
     }
     
-    .result_data .total_participants {
+    .result_data h3 {
         font-size: 30px;
     }
     
