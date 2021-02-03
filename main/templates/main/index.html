@@ -41,16 +41,11 @@
                 <a href="{% url 'main:form' %}">
                     <button class="start" type="button">시작하기</button>
                 </a>
-                <!-- <a href="http://www.paullab.co.kr/curriculum.html" target="_blank">
-                    <button class="lecture">강의 보러가기</button>
-                </a> -->
             </div>
 
             <div class="result_data">
                 <div class="data_wrap">
-                    <div class="total_participants">
-                        <h3>참여자 수</h3>
-                    </div>
+                    <h3>참여자 수</h3>
                     <ul>
                         {% for developer in developers %}
                             <li>{{ developer.name }} : {{ developer.count }}명</li>

@@ -1,12 +1,3 @@
-function resize() {
-    let vheight = $(window).height();
-    let vwidth = $(window).width();
-    $('.test').css({
-      'height': vheight,
-      'width': vwidth 
-    });
-};
-
 function scrollUp() {
     const vheight = $('.test').height();
     $('html, body').animate({
@@ -22,8 +13,6 @@ function scrollDown() {
 }
 
 $(function(){
-    resize();
-
     $('.next_btn').click(function(e){
         let divs = $(this).parent().prev().children();
         let inputs = divs.find('input:checked');
@@ -48,14 +37,8 @@ $(function(){
         }
         return true;
     });
-});
 
-$(window).resize(function(){
-    resize();
-});
-
-$(function(){
     $("html, body").animate({
         scrollTop: 0
-    }, 500); 
+    }, 500);
 });
