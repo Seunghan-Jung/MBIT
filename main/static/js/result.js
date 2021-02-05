@@ -7,6 +7,11 @@ $(function() {
     let img = $('.result_img img').attr('src');
     $("meta[property='og\\:url']").attr("content", url);
     $("meta[property='og\\:image']").attr("content", img);
+
+    setTimeout(function() {
+      $("#loading").css('display', 'none');
+      $("#main_contents").css('display', 'flex');
+  }, 2500);
 });
 
 Kakao.init('376f7cf8300ecdc152f32bca6ebbcbca');
