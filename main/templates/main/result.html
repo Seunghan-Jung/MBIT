@@ -68,7 +68,7 @@
                         {% for language in data.languages.list %}
                         <li>
                             <div class="img_wrap">
-                                <img src="{% static '' %}{{ language.img }}" alt="{{ language.img }}">
+                                <img src="{% static '' %}{{ language.img }}" alt="{{ language.name }}">
                             </div>
                             <h3>{{ language.name }}</h3>
                         </li>
