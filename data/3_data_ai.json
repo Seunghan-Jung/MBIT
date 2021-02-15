@@ -18,15 +18,15 @@
       "list": [
           {
               "name": "Python",
-              "img": "img/python.png"
+              "img": "img/lang/python.png"
           },
           {
               "name": "R",
-              "img": "img/r.png"
+              "img": "img/lang/r.png"
           },
           {
               "name": "SAS",
-              "img": "img/sas.png"
+              "img": "img/lang/sas.png"
           }
       ],
       "comments": [

@@ -17,15 +17,15 @@
       "list": [
           {
               "name": "C",
-              "img": "img/c.png"
+              "img": "img/lang/c.png"
           },
           {
               "name": "Python",
-              "img": "img/python.png"
+              "img": "img/lang/python.png"
           },
           {
               "name": "SQL",
-              "img": "img/sql.png"
+              "img": "img/lang/sql.png"
           }
       ],
       "comments": [

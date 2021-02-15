@@ -18,15 +18,15 @@
       "list": [
           {
               "name": "C#",
-              "img": "img/C_sharp.png"
+              "img": "img/lang/cs.png"
           },
           {
               "name": "C++",
-              "img": "img/c__.png"
+              "img": "img/lang/cpp.png"
           },
           {
               "name": "Python",
-              "img": "img/python.png"
+              "img": "img/lang/python.png"
           }
       ],
       "comments": [
