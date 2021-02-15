@@ -1,0 +1,55 @@
+{
+    "title": "예술적 감각이 뛰어난 당신은!",
+    
+    "features": [
+        "내 눈으로 결과를 확인해야 함.  바로 바로 적용되는 화면에 성취감을 느낌.",
+        "어렸을 때 한번쯤은 호그와트 들어가는 상상해보지 않나? 상상력이 풍부하고 새로운 도전을 즐기는 편임.",
+        "은근히 완벽주의자 성향이 있어서 1px이라도 비뚤어지거나 대칭이 맞지 않으면 참을 수 없음.",
+        "자유로운 영혼이지만 내가 지금 무엇을 해야하는지 정확히 알아야 함."
+    ],
+    
+    "descriptions": [
+        "FE(Front-End)라고도 부르며, 웹이나 앱을 이용할 때 눈으로 보는 모든 화면들을 만드는 개발자를 의미합니다.",
+        "반응형 웹이나 UI를 만들어야 하기 때문에 미적 감각이 필요합니다.",
+        "웹 퍼블리셔와 프론트엔드 개발자는 공동의 영역을 공유합니다. 웹 퍼블리셔는 주로 HTML, CSS를 사용하여 화면을 설계합니다. 프론트엔드 개발자는 js, jQuery, 백엔드와의 연동 등 화면 설계와 동시에 화면 구조까지 살펴볼 수 있는 사람을 말합니다. 그러나 실무에서는 이 두 가지 직업군의 롤 모두를 수행하는 사람이 많습니다."
+    ],
+    
+    "languages": {
+        "list": [
+            {
+                "name": "HTML",
+                "img": "img/lang/html.png"
+            },
+            {
+                "name": "CSS",
+                "img": "img/lang/css.png"
+            },
+            {
+                "name": "JavaScript",
+                "img": "img/lang/css.png"
+            }
+        ],
+        "comments": [
+            "HTML, CSS, JavaScript 웹을 구성하는 3요소 입니다! (얼마 전 Web Assembly가 추가되어 4요소가 되었지만 처음에는 3개만 배우셔도 충분합니다!)",
+            "기본적인 내용이 숙지되었다면 CSS Animation, Media Query, Canvas, JSON parsing, Ajax, Node.js, jQuery를 공부해보세요!"
+        ]
+    },
+    
+    "lectures": [
+        {
+            "name": "HTML, CSS, JS, Python 30분 요약강좌",
+            "img": "img/lec/lec_30minutes.png",
+            "url": "https://www.inflearn.com/course/제주코딩-웹개발-30분요약"
+        },
+        {
+            "name": "코알못에서 웹서비스 런칭까지 : 제주 코딩 베이스캠프(Django)",
+            "img": "img/lec/lec_web_fullstack.png",
+            "url": "https://www.inflearn.com/course/web_fullstack"
+        },
+        {
+            "name": "제주코딩베이스캠프 Code Festival: JavaScript 100제",
+            "img": "img/lec/lec_js100",
+            "url": "https://www.inflearn.com/course/제주코딩-자바스크립트-100제"
+        }
+    ]
+  }

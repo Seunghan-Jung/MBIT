@@ -14,6 +14,7 @@ class Choice(models.Model):
     
     developer = models.ForeignKey(to='main.Developer', on_delete=models.CASCADE, null=True)
     question = models.ForeignKey(to='main.Question', on_delete=models.CASCADE)
+    
     def __str__(self):
         return self.content
     
@@ -22,6 +23,7 @@ class Choice(models.Model):
 class Developer(models.Model):
     name = models.CharField(max_length=50)
     count = models.IntegerField(default=0)
+    data = models.JSONField(default={})
     
     def __str__(self):
         return self.name

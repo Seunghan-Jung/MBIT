@@ -1,0 +1,54 @@
+{
+  "title": "Data에서 인사이트를 발견할 수 있는 당신은!",
+  
+  "features": [
+      "하루하루 계획을 세워야 함. 준비없이 갑작스럽게 해야 될 일이 생기는 것은 질색!",
+      "효율적이고 합리적인 방식을 선호하는 타입. 자기전에 내일 어디갈지 뭐할지 다 정하고 자는 편.",
+      "의사결정 시 나의 느낌보다는 다른 사람들의 의견들을 꼼꼼히 조사하는 편. 그래서 뭔가 결정하는 데 하루 종일 걸림."
+  ],
+  
+  "descriptions": [
+      "데이터 분석은 정보에 대한 결론을 도출하기 위해 적합한 알고리즘과 통계기법을 적용해 패턴을 찾는 작업입니다.",
+      "인공지능은 데이터 분석 기반으로 인간만이 할 수 있다고 생각했던 기능을 컴퓨터가 수행하는 것을 목표로 합니다.",
+      "정보를 기반으로 의사결정을 지원하는 것을 목표로 하기 때문에 이해관계자가 잘 이해할 수 있도록 전달하는 것 또한 중요합니다.",
+      "무엇을 해결하고자 하는지 명확하게 판단해야 하기 때문에 원하는 목적과 어떤 임팩트가 있는지 구체적으로 정의하는 것이 좋습니다."
+  ],
+  
+  "languages": {
+      "list": [
+          {
+              "name": "Python",
+              "img": "img/python.png"
+          },
+          {
+              "name": "R",
+              "img": "img/r.png"
+          },
+          {
+              "name": "SAS",
+              "img": "img/sas.png"
+          }
+      ],
+      "comments": [
+          "SAS, MATLAB, 사이킷런(Scikit-learn), 텐서플로우(TensorFlow), 파이토치(PyTorch) "
+      ]
+  },
+  
+  "lectures": [
+      {
+          "name": "30분 요약 강좌 시즌2 : Python 활용편",
+          "img": "img/lec/lec_30minutes2.png",
+          "url": "https://www.inflearn.com/course/제주코딩-웹개발-30분요약-시즌2"
+      },
+      {
+          "name": "제주 하간디 이신 데이터들 Python으로 몬딱 분석해불게",
+          "img": "img/lec/lec_jeju_data.png",
+          "url": "https://www.inflearn.com/course/제주코딩베이스캠프-파이썬-데이터분석"
+      },
+      {
+          "name": "캐글 데이터로 살펴보는 데이터분석 With Python and SAS",
+          "img": "img/lec/lec_sas.png",
+          "url": "https://www.inflearn.com/users/170213"
+      }
+  ]
+}

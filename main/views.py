@@ -64,4 +64,4 @@ def result(request, developer_id):
 
 def ssl(request, file_name):
     
-    return FileResponse(open('897D8DB8D5240A1C2D1DBB3126927180.txt', 'rb'))
+    return FileResponse(open(file_name, 'rb'))

@@ -20,6 +20,7 @@
 {% endblock head %}
 
 {% block body %}
+    {% with developer.data as data %}
     <section id="loading">
         <div class="loading_img"></div>
     </section>
@@ -27,95 +28,92 @@
         <div class="wrapper">
             <div class="result">
                 <div class="titles">
-                    <!-- <h3>예술적 감각이 뛰어난 당신은!</h3> -->
+                    <h3>{{ data.title }}</h3>
                     <h1>{{ developer.name }}</h1>
                 </div>
                 <div class="result_img">
                     <img src="{% static 'img/' %}{{ developer.pk }}.png" alt="frontend">
                 </div>
             </div>
-            <!-- <div class="result_explains">
+            <div class="result_explains">
                 <div class="explain">
                     <h3 class="title">나와 맞는 개발 유형은 {{ developer.name }}?!</h3>
                     <ul>
+                        {% for feature in data.features %}
                         <li>
-                            프론트엔드는 어쩌고 저쩌고 이기 때문에 기본적으로 무엇을 그렇기 때문에 HTML,CSS를 공부하고 JS를 어쩌고 하는 것이 좋아!
+                            {{ feature }}
                         </li>
-                        <li>
+                        {% endfor %}
+                        {% comment %} <li>
                             프론트엔드는 어쩌고 저쩌고 이기 때문에 기본적으로 무엇을 그렇기 때문에 HTML,CSS를 공부하고 JS를 어쩌고 하는 것이 좋아!
-                        </li>
-                        <li>
-                            프론트엔드는 어쩌고 저쩌고 이기 때문에 기본적으로 무엇을 그렇기 때문에 HTML,CSS를 공부하고 JS를 어쩌고 하는 것이 좋아!
-                        </li>
-                        <li>
-                            프론트엔드는 어쩌고 저쩌고 이기 때문에 기본적으로 무엇을 그렇기 때문에 HTML,CSS를 공부하고 JS를 어쩌고 하는 것이 좋아!
-                        </li>
+                        </li>{% endcomment %}
                     </ul>
                 </div>
                 <div class="explain">
-                    <h3 class="title">Front-end 개발자가 뭐지?</h3>
+                    <h3 class="title">{{ developer.name }}가 뭐지?</h3>
                     <ul>
-                        <li>
+                        {% for description in data.descriptions %}
+                            <li>
+                                {{ description }}
+                            </li>
+                        {% endfor %}
+                        {% comment %} <li>
                             프론트엔드는 어쩌고 저쩌고 이기 때문에 기본적으로 무엇을 그렇기 때문에 HTML,CSS를 공부하고 JS를 어쩌고 하는 것이 좋아!
-                        </li>
-                        <li>
-                            프론트엔드는 어쩌고 저쩌고 이기 때문에 기본적으로 무엇을 그렇기 때문에 HTML,CSS를 공부하고 JS를 어쩌고 하는 것이 좋아!
-                        </li>
-                        <li>
-                            프론트엔드는 어쩌고 저쩌고 이기 때문에 기본적으로 무엇을 그렇기 때문에 HTML,CSS를 공부하고 JS를 어쩌고 하는 것이 좋아!
-                        </li>
-                        <li>
-                            프론트엔드는 어쩌고 저쩌고 이기 때문에 기본적으로 무엇을 그렇기 때문에 HTML,CSS를 공부하고 JS를 어쩌고 하는 것이 좋아!
-                        </li>
+                        </li>{% endcomment %}
                     </ul>
                 </div>
                 <div class="explain">
                     <h3 class="title">그래서 어떤 언어부터 공부해야 할까?</h3>
                     <ul class="language_lists">
+                        {% for language in data.languages.list %}
                         <li>
+                            <div class="img_wrap">
+                                <img src="{% static '' %}{{ language.img }}" alt="">
+                            </div>
+                            <h3>{{ language.name }}</h3>
+                        </li>
+                        {% endfor %}
+                        {% comment %} <li>
                             <div class="img_wrap">
                                 <img src="{% static 'img/html.png' %}" alt="html">
                             </div>
                             <h3>HTML</h3>
-                        </li>
-                        <li>
-                            <div class="img_wrap">
-                                <img src="{% static 'img/css.png' %}" alt="css">
-                            </div>
-                            <h3>CSS</h3>
-                        </li>
-                        <li>
-                            <div class="img_wrap">
-                                <img src="{% static 'img/js.png' %}" alt="javascript">
-                            </div>
-                            <h3>JavaScript</h3>
-                        </li>
+                        </li>{% endcomment %}
                     </ul>
-                    <p>
+                    {% if data.languages.comments %}
+                    {% for comment in data.languages.comments %}
+                        <p>
+                            {{ comment }}
+                        </p>
+                    {% endfor %}
+                    {% endif %}
+                    {% comment %} <p>
                         프론트엔드는 어쩌고 저쩌고 이기 때문에 기본적으로 무엇을 그렇기 때문에 HTML,CSS를 공부하고 JS를 어쩌고 하는 것이 좋아!
-                    </p>
+                    </p> {% endcomment %}
                 </div>
             </div>
             <div class="lectures">
                 <h3 class="title">강의 추천</h3>                
                 <p>Front-end 공부를 시작하기 좋은 강의를 추천해 드릴게요!</p>
                 <ul>
-                    <li>
+                    {% for lecture in data.lectures %}
+                        <li>
+                            <img src="{% static '' %}{{ lecture.img }}" alt="{{ lecture.name }}">
+                            <h3>{{ lecture.name }}</h3>
+                            <a href="{{ lecture.url }}" target="_blank">
+                                <button type="button">강의 보러가기</button>
+                            </a>
+                        </li>
+                    {% endfor %}
+                    {% comment %} <li>
                         <img src="{% static 'img/lec_30minutes.png' %}" alt="30분 요약강좌">
                         <h3>HTML, CSS, JS, Python 30분 요약강좌</h3>
                         <a href="https://www.inflearn.com/course/제주코딩-웹개발-30분요약" target="_blank">
                             <button type="button">강의 보러가기</button>
                         </a>
-                    </li>
-                    <li>
-                        <img src="{% static 'img/lec_web_fullstack.png' %}" alt="코알못에서 웹서비스 런칭까지">
-                        <h3>코알못에서 웹서비스 런칭까지 : 제주 코딩 베이스캠프(Django)</h3>
-                        <a href="https://www.inflearn.com/course/web_fullstack" target="_blank">
-                            <button type="button">강의 보러가기</button>
-                        </a>
-                    </li>
+                    </li>{% endcomment %}
                 </ul>
-            </div> -->
+            </div>
             <div class="share">
                 <div class="url">
                     <button class="copy_btn" type="button">URL 복사하기</button>
@@ -160,6 +158,7 @@
             </div>
         </div>
     </section>
+    {% endwith %}
 {% endblock body %}
 
 {% block js %}
