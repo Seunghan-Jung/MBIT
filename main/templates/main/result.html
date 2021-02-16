@@ -44,9 +44,8 @@
                             {{ feature }}
                         </li>
                         {% endfor %}
-                        {% comment %} <li>
-                            프론트엔드는 어쩌고 저쩌고 이기 때문에 기본적으로 무엇을 그렇기 때문에 HTML,CSS를 공부하고 JS를 어쩌고 하는 것이 좋아!
-                        </li>{% endcomment %}
+                        {% comment %}
+                        {% endcomment %}
                     </ul>
                 </div>
                 <div class="explain">
@@ -57,9 +56,8 @@
                                 {{ description }}
                             </li>
                         {% endfor %}
-                        {% comment %} <li>
-                            프론트엔드는 어쩌고 저쩌고 이기 때문에 기본적으로 무엇을 그렇기 때문에 HTML,CSS를 공부하고 JS를 어쩌고 하는 것이 좋아!
-                        </li>{% endcomment %}
+                        {% comment %}
+                        {% endcomment %}
                     </ul>
                 </div>
                 <div class="explain">
@@ -73,12 +71,8 @@
                             <h3>{{ language.name }}</h3>
                         </li>
                         {% endfor %}
-                        {% comment %} <li>
-                            <div class="img_wrap">
-                                <img src="{% static 'img/html.png' %}" alt="html">
-                            </div>
-                            <h3>HTML</h3>
-                        </li>{% endcomment %}
+                        {% comment %}
+                        {% endcomment %}
                     </ul>
                     {% if data.languages.comments %}
                     {% for comment in data.languages.comments %}
@@ -87,14 +81,13 @@
                         </p>
                     {% endfor %}
                     {% endif %}
-                    {% comment %} <p>
-                        프론트엔드는 어쩌고 저쩌고 이기 때문에 기본적으로 무엇을 그렇기 때문에 HTML,CSS를 공부하고 JS를 어쩌고 하는 것이 좋아!
-                    </p> {% endcomment %}
+                    {% comment %}
+                    {% endcomment %}
                 </div>
             </div>
             <div class="lectures">
                 <h3 class="title">강의 추천</h3>                
-                <p>Front-end 공부를 시작하기 좋은 강의를 추천해 드릴게요!</p>
+                <p>{{ developer.name }} 공부를 시작하기 좋은 강의를 추천해 드릴게요!</p>
                 <ul>
                     {% for lecture in data.lectures %}
                         <li>
@@ -105,13 +98,8 @@
                             </a>
                         </li>
                     {% endfor %}
-                    {% comment %} <li>
-                        <img src="{% static 'img/lec_30minutes.png' %}" alt="30분 요약강좌">
-                        <h3>HTML, CSS, JS, Python 30분 요약강좌</h3>
-                        <a href="https://www.inflearn.com/course/제주코딩-웹개발-30분요약" target="_blank">
-                            <button type="button">강의 보러가기</button>
-                        </a>
-                    </li>{% endcomment %}
+                    {% comment %}
+                    {% endcomment %}
                 </ul>
             </div>
             <div class="share">
@@ -135,7 +123,7 @@
                     </il>
                     <il>
                         <h3>다른 사람들은 어떤 유형일까?</h3>
-                        <a href="#">
+                        <a href="{% url 'main:all_results' %}">
                             <button type="button">다른 결과 알아보기</button>
                         </a>
                     </il>
