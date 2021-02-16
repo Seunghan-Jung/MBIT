@@ -91,9 +91,9 @@
                 <ul>
                     {% for lecture in data.lectures %}
                         <li>
-                            <img src="{% static '' %}{{ lecture.img }}" alt="{{ lecture.name }}">
-                            <h3>{{ lecture.name }}</h3>
                             <a href="{{ lecture.url }}" target="_blank">
+                                <img src="{% static '' %}{{ lecture.img }}" alt="{{ lecture.name }}">
+                                <h3>{{ lecture.name }}</h3>
                                 <button type="button">강의 보러가기</button>
                             </a>
                         </li>
