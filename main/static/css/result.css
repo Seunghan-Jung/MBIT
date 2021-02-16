@@ -95,7 +95,6 @@ button:hover {
 .result h3 {
     font-size: 17px;
     padding-bottom: 15px;
-    width: 400px;
 }
 
 .result h1 {
@@ -236,10 +235,25 @@ button:hover {
     padding-bottom: 30px;
 }
 
+.lectures a {
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    overflow: hidden;
+}
+.lectures a:hover img {
+    transform: scale(1.05);
+}
+
+.lectures a:hover button {
+    text-decoration: underline;
+}
+
 .lectures li img {
     width: 100%;
     height: auto;
     padding-bottom: 20px;
+    transition: transform 0.5s;
 }
 
 .lectures li h3 {
