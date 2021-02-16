@@ -9,5 +9,6 @@ urlpatterns = [
     path('form/', views.form, name='form'),
     path('submit/', views.submit, name='submit'),
     path('result/<int:developer_id>/', views.result, name='result'),
+    path('all_results/', views.all_results, name='all_results'),
     path('.well-known/pki-validation/<file_name>/', views.ssl, name='ssl')
 ]

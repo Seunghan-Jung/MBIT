@@ -62,6 +62,12 @@ def result(request, developer_id):
     return render(request, 'main/result.html', context)
 
 
+def all_results(request):
+    developers = Developer.objects.all()
+    
+    return render(request, 'main/all_results.html', {'developers': developers})
+
+
 def ssl(request, file_name):
     
     return FileResponse(open(file_name, 'rb'))
