@@ -11,7 +11,7 @@ $(function() {
     setTimeout(function() {
       $("#loading").css('display', 'none');
       $("#main_contents").css('display', 'flex');
-  }, 2000);
+  }, 1800);
 });
 
 Kakao.init('376f7cf8300ecdc152f32bca6ebbcbca');

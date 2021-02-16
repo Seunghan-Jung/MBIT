@@ -93,7 +93,7 @@ button:hover {
 }
 
 .result h3 {
-    font-size: 20px;
+    font-size: 17px;
     padding-bottom: 15px;
     width: 400px;
 }
@@ -315,7 +315,7 @@ button:hover {
     }
 
     button {
-        font-size: 15px;
+        font-size: 10px;
         width: 250px;
         height: 40px;
     }
@@ -446,7 +446,7 @@ button:hover {
     }
     
     .result h3 {
-        font-size: 30px;
+        font-size: 20px;
     }
     
     .result h1 {
