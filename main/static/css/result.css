@@ -329,7 +329,7 @@ button:hover {
     }
 
     button {
-        font-size: 10px;
+        font-size: 15px;
         width: 250px;
         height: 40px;
     }
@@ -372,7 +372,7 @@ button:hover {
     
     .result_explains ul {
         padding: 0 15px;
-        font-size: 10px;
+        font-size: 15px;
     }
     
     .result_explains li {
@@ -409,7 +409,7 @@ button:hover {
     .lectures p {
         width: 200px;
         padding: 30px 0;
-        font-size: 10px;
+        font-size: 14px;
     }
     
     .lectures ul {
@@ -436,7 +436,7 @@ button:hover {
 
     .buttons h3 {
         width: 250px;
-        font-size: 10px;
+        font-size: 13px;
     }
     
     .weniv a {
