@@ -24,11 +24,15 @@
           "img": "img/lang/java.png"
         },
         {
-          "name": "Node.js",
-          "img": "img/lang/node_js.png"
+          "name": "JavaScript",
+          "img": "img/lang/js.png"
         }
       ],
-      "comments": []
+      "comments": [
+          "python을 배우신 후에는, Django 또는 Flask 웹 프레임워크를 배우시면 됩니다.",
+          "Java를 배우신 후에는, Spring과 Spring Boot 웹 프레임워크를 공부하시면 좋습니다.",
+          "JavaScript를 배우신 경우 Node.js라는 런타임 환경과 그 위에서 동작하는 Express.js 등의 웹 프레임워크를 공부하시면 됩니다."
+      ]
     },
   
     "lectures": [

@@ -44,20 +44,16 @@
                             {{ feature }}
                         </li>
                         {% endfor %}
-                        {% comment %}
-                        {% endcomment %}
                     </ul>
                 </div>
                 <div class="explain">
-                    <h3 class="title">{{ developer.name }}가 뭐지?</h3>
+                    <h3 class="title">{{ developer.name }}(이)가 뭐지?</h3>
                     <ul>
                         {% for description in data.descriptions %}
                             <li>
                                 {{ description }}
                             </li>
                         {% endfor %}
-                        {% comment %}
-                        {% endcomment %}
                     </ul>
                 </div>
                 <div class="explain">
@@ -71,18 +67,16 @@
                             <h3>{{ language.name }}</h3>
                         </li>
                         {% endfor %}
-                        {% comment %}
-                        {% endcomment %}
                     </ul>
                     {% if data.languages.comments %}
+                    <ul>
                     {% for comment in data.languages.comments %}
-                        <p>
+                        <li>
                             {{ comment }}
-                        </p>
+                        </li>
                     {% endfor %}
+                    </ul>
                     {% endif %}
-                    {% comment %}
-                    {% endcomment %}
                 </div>
             </div>
             <div class="lectures">
@@ -98,8 +92,6 @@
                             </a>
                         </li>
                     {% endfor %}
-                    {% comment %}
-                    {% endcomment %}
                 </ul>
             </div>
             <div class="share">
