@@ -51,6 +51,11 @@ button:hover {
     color: #fff;
 }
 
+.color_second {
+    background-color: #7F47DD;
+    color: #fff;
+}
+
 #loading {
     display: flex;
     justify-content: center;
