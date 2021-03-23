@@ -22,8 +22,9 @@ class Choice(models.Model):
 # 개발자 유형
 class Developer(models.Model):
     name = models.CharField(max_length=50)
+    img = models.ImageField(null=True)
     count = models.IntegerField(default=0)
-    data = models.JSONField(default={})
+    data = models.JSONField()
     
     def __str__(self):
         return self.name

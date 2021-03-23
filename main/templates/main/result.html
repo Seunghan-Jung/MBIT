@@ -32,7 +32,9 @@
                     <h1>{{ developer.name }}</h1>
                 </div>
                 <div class="result_img">
-                    <img src="{% static 'img/' %}{{ developer.pk }}.png" alt="frontend">
+                    {% comment %} {% with developer_character_img=developer.pk+'.png' %} {% endcomment %}
+                    <img src="{% static developer.img %}" alt="frontend">
+                    {% comment %} {% endwith %} {% endcomment %}
                 </div>
             </div>
             <div class="result_explains">
@@ -62,7 +64,7 @@
                         {% for language in data.languages.list %}
                         <li>
                             <div class="img_wrap">
-                                <img src="{% static '' %}{{ language.img }}" alt="{{ language.name }}">
+                                <img src="{% static language.img %}" alt="{{ language.name }}">
                             </div>
                             <h3>{{ language.name }}</h3>
                         </li>
@@ -86,7 +88,7 @@
                     {% for lecture in data.lectures %}
                         <li>
                             <a href="{{ lecture.url }}" target="_blank">
-                                <img src="{% static '' %}{{ lecture.img }}" alt="{{ lecture.name }}">
+                                <img src="{% static lecture.img %}" alt="{{ lecture.name }}">
                                 <h3>{{ lecture.name }}</h3>
                                 <button type="button">강의 보러가기</button>
                             </a>
