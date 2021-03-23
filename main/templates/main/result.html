@@ -32,9 +32,7 @@
                     <h1>{{ developer.name }}</h1>
                 </div>
                 <div class="result_img">
-                    {% comment %} {% with developer_character_img=developer.pk+'.png' %} {% endcomment %}
-                    <img src="{% static developer.img %}" alt="frontend">
-                    {% comment %} {% endwith %} {% endcomment %}
+                    <img src="{{ developer.img.url }}" alt="frontend">
                 </div>
             </div>
             <div class="result_explains">
