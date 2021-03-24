@@ -1,48 +1,50 @@
 {
-  "title": "모든지 뚫고, 막을 수 있는 당신은!",
-  
-  "features": [
-      "어떤 서비스가 만들어지기 전에 시큐어코딩이 이뤄지지 않으면 사상누각! 아무리 좋은 서비스라 하더라도 단번에 무너질 수 있어!",
-      "그냥 웹페이지를 접속했을 뿐인데 나에겐 취약점이 너무나 많이 보인다! 이렇게 해도 뚫릴 것 같고, 저렇게 해도 뚫릴 것 같아.",
-      "해커, 정의의 이름으로 너희들을 용납하지 않겠다!",
-      "이미 완성품인데 괜히 분해해서 분석해 보고 싶음. 사실 그렇게 분해하다가 망가진 것도 있음...ㅎ"
-  ],
-  
-  "descriptions": [
-      "정보보안은 보안 취약점을 찾아내어 문제를 해결하고 이를 악의적으로 이용하는 것을 방지하는 행위를 말합니다.",
-      "기업 측면에서는 네트워크, 데이터베이스 등의 정보자산을 안전하게 보호하고, 일반 사용자 측면에서는 개인 정보 유출, 남용을 방지하는 역할을 담당한다."
-  ],
-  
-  "languages": {
-      "list": [
-          {
-              "name": "C",
-              "img": "img/lang/c.png"
-          },
-          {
-              "name": "Python",
-              "img": "img/lang/python.png"
-          },
-          {
-              "name": "SQL",
-              "img": "img/lang/sql.png"
-          }
-      ],
-      "comments": [
-          "Linux, Windows 등의 운영체제"
-      ]
-  },
-  
-  "lectures": [
-      {
-          "name": "정보보안 패스파인더",
-          "img": "img/lec/lec_pathfinder.png",
-          "url": "https://www.inflearn.com/course/정보보안-패스파인더"
-      },
-      {
-          "name": "실습으로 배우는 SQL injection",
-          "img": "img/lec/lec_sql.png",
-          "url": "https://www.inflearn.com/users/170213"
-      }
-  ]
+    "title": "모든지 뚫고, 막을 수 있는 당신은!",
+    "img": "img/developer/information_security.png",
+    "img_no_bg": "img/developer/information_security-no-bg.png",
+    "class": "security",
+    "features": [
+        "어떤 서비스가 만들어지기 전에 시큐어코딩이 이뤄지지 않으면 사상누각! 아무리 좋은 서비스라 하더라도 단번에 무너질 수 있어!",
+        "그냥 웹페이지를 접속했을 뿐인데 나에겐 취약점이 너무나 많이 보인다! 이렇게 해도 뚫릴 것 같고, 저렇게 해도 뚫릴 것 같아.",
+        "해커, 정의의 이름으로 너희들을 용납하지 않겠다!",
+        "이미 완성품인데 괜히 분해해서 분석해 보고 싶음. 사실 그렇게 분해하다가 망가진 것도 있음...ㅎ"
+    ],
+    
+    "descriptions": [
+        "정보보안은 보안 취약점을 찾아내어 문제를 해결하고 이를 악의적으로 이용하는 것을 방지하는 행위를 말합니다.",
+        "기업 측면에서는 네트워크, 데이터베이스 등의 정보자산을 안전하게 보호하고, 일반 사용자 측면에서는 개인 정보 유출, 남용을 방지하는 역할을 담당한다."
+    ],
+    
+    "languages": {
+        "list": [
+            {
+                "name": "C",
+                "img": "img/lang/c.png"
+            },
+            {
+                "name": "Python",
+                "img": "img/lang/python.png"
+            },
+            {
+                "name": "SQL",
+                "img": "img/lang/sql.png"
+            }
+        ],
+        "comments": [
+            "Linux, Windows 등의 운영체제"
+        ]
+    },
+    
+    "lectures": [
+        {
+            "name": "정보보안 패스파인더",
+            "img": "img/lec/lec_pathfinder.png",
+            "url": "https://www.inflearn.com/course/정보보안-패스파인더"
+        },
+        {
+            "name": "실습으로 배우는 SQL injection",
+            "img": "img/lec/lec_sql.png",
+            "url": "https://www.inflearn.com/users/170213"
+        }
+    ]
 }

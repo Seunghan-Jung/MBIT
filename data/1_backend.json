@@ -1,6 +1,8 @@
 {
     "title": "보이지 않는 것을 보는 당신은!",
-    
+    "img": "img/developer/backend.png",
+    "img_no_bg": "img/developer/backend-no-bg.png",
+    "class": "backend",
     "features": [
       "어떤 일이든 안정적인 것이 우선임. 밴드 활동을 한다면, 화려한 보컬보다는 안정적인 연주를 이끌어나가는 베이스와 드럼을 맡는 편.",
       "주로 데이터를 다루는 데에 관심이 있음. 시각적으로 디자인을 하는 것에는 관심이 없고 귀찮음.",

@@ -14,10 +14,11 @@
         <div class="wrapper">
             <h1>MBIT</h1>
             <div class="mbit">
-                <div class="frontend">
-                    <a href="/result/2/"><img src="{% static 'img/frontend-no-bg.png' %}" alt="프론트엔드"></a>
+                {% for developer in developers %}
+                <div class="{{ developer.data.class }}">
+                    <a href="/result/{{ developer.id }}/"><img src="{% static developer.data.img_no_bg %}" alt="{{ developer.name }}"></a>
                 </div>
-                <div class="backend">
+                {% comment %} <div class="backend">
                     <a href="/result/1/"><img src="{% static 'img/backend-no-bg.png' %}" alt="백엔드"></a>  
                 </div>
                 <div class="security">
@@ -28,7 +29,8 @@
                 </div>
                 <div class="data">
                     <a href="/result/3/"><img src="{% static 'img/data_analyst-no-bg.png' %}" alt="데이터분석"></a>
-                </div>
+                </div> {% endcomment %}
+                {% endfor %}
             </div>
         </div>
     </section>

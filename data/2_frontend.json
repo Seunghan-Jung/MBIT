@@ -1,6 +1,8 @@
 {
     "title": "예술적 감각이 뛰어난 당신은!",
-    
+    "img": "img/developer/frontend.png",
+    "img_no_bg": "img/developer/frontend-no-bg.png",
+    "class": "frontend",
     "features": [
         "내 눈으로 결과를 확인해야 함.  바로 바로 적용되는 화면에 성취감을 느낌.",
         "어렸을 때 한번쯤은 호그와트 들어가는 상상해보지 않나? 상상력이 풍부하고 새로운 도전을 즐기는 편임.",
